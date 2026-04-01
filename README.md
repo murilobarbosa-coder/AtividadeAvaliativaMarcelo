@@ -1,53 +1,98 @@
-<<<<<<< HEAD
-# AtividadeAvaliativaMarcelo
-
 # LeadFlow
 
-O **LeadFlow** é um sistema de gerenciamento de leads desenvolvido com o objetivo de auxiliar usuários no controle, organização e acompanhamento de potenciais clientes ao longo do processo de vendas.
+O **LeadFlow** é um aplicativo desenvolvido em Flutter com o objetivo de simular um sistema de autenticação de usuários, utilizando dados mockados em memória.
 
 ---
 
-## Intuito do Projeto
+## Objetivo
 
-O projeto tem como principal finalidade oferecer uma solução simples e eficiente para o gerenciamento de leads, permitindo que usuários acompanhem o progresso de cada contato desde o primeiro interesse até a conversão em cliente.
+O projeto foi desenvolvido como atividade P1 com foco em:
 
-Muitas vezes, oportunidades de venda são perdidas por falta de organização ou acompanhamento adequado. O LeadFlow surge como uma ferramenta que centraliza essas informações, facilitando a visualização do pipeline de vendas e auxiliando na tomada de decisões.
-
-Além disso, o sistema busca proporcionar uma experiência intuitiva e moderna, com uma interface limpa e objetiva, permitindo que qualquer usuário consiga utilizá-lo sem dificuldades.
-
----
-
-## Funcionalidades Principais
-
-- Cadastro de novos leads  
-- Visualização de lista de leads  
-- Atualização de status (Novo, Em contato, Fechado, Perdido)  
-- Organização do funil de vendas  
+- Navegação entre telas  
+- Uso de formulários  
+- Validação de dados  
+- Organização arquitetural  
+- Manipulação de dados em memória (mock)  
 
 ---
 
-## Interface
+## Funcionalidades
 
-O sistema utiliza uma identidade visual moderna, com foco em cores que representam crescimento e produtividade, como tons de verde e contrastes em cores neutras.
+- Splash Screen inicial  
+- Tela de Login com validação  
+- Tela de Cadastro de usuário  
+- Armazenamento de dados em memória  
+- Autenticação simulada  
+- Navegação para tela Home após login  
+- Tela Home com ícone e mensagem de boas-vindas  
 
 ---
 
-=======
-# avaliacao
+## Arquitetura
 
-A new Flutter project.
+O projeto segue uma organização baseada em separação de responsabilidades:
 
-## Getting Started
+lib/
+├── main.dart
+├── app/
+│ ├── models/
+│ ├── viewmodels/
+│ ├── data/
+│ └── views/
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+- **Models** → representam os dados (ex: usuário)  
+- **ViewModels** → lógica da aplicação  
+- **Views** → interface (telas)  
+- **Data** → armazenamento mockado em memória  
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> 764874c (commit inicial do projeto)
+## Model utilizado
+
+O projeto utiliza um model de usuário contendo:
+
+- Nome  
+- Email/Login  
+- Senha  
+
+---
+
+## Dados Mockados
+
+Os dados são armazenados em memória utilizando `List<UsuarioModel>`.  
+Não é utilizado banco de dados ou API externa, conforme requisito da atividade.
+
+---
+
+## Fluxo do Aplicativo
+
+1. Splash Screen  
+2. Tela de Login  
+3. Tela de Cadastro  
+4. Retorno ao Login  
+5. Autenticação  
+6. Acesso à Home  
+
+---
+
+## Tecnologias
+
+- Flutter  
+- Dart  
+- Android Studio  
+
+---
+
+## Equipe
+
+- Pollyana Caso - 25001334  
+- Murilo Colli Barbosa - 25000458  
+- Luis Felipe Coelho - 25001003  
+- Pedro Ignácio de Oliveira Bortolon - 25000137  
+
+---
+
+## Observações
+
+Este projeto não possui autenticação real, sendo apenas uma simulação para fins acadêmicos.
