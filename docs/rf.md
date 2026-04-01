@@ -9,4 +9,10 @@
 - **RF-03 – Listagem de Leads**  
   O sistema deve exibir uma lista de leads cadastrados, permitindo visualização e consulta.
 
+- **RF-04 – Pesquisa de Leads**  
+  O sistema deve permitir que o usuário realize buscas por leads cadastrados utilizando filtros como nome, empresa ou status.
+
+- **RF-05 – Exclusão de Leads**  
+  O sistema deve permitir que o usuário exclua leads cadastrados, removendo-os da lista de forma definitiva.
+
 ---
