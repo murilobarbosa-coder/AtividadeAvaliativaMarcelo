@@ -18,13 +18,30 @@ O projeto foi desenvolvido como atividade P1 com foco em:
 
 ## Funcionalidades
 
-- Splash Screen inicial  
-- Tela de Login com validação  
-- Tela de Cadastro de usuário  
-- Armazenamento de dados em memória  
-- Autenticação simulada  
-- Navegação para tela Home após login  
-- Tela Home com ícone e mensagem de boas-vindas  
+### Splash Screen
+Tela inicial exibida ao abrir o aplicativo, responsável por apresentar rapidamente a identidade do app antes de redirecionar para o login.  
+Essa tela tem como objetivo criar uma experiência inicial agradável e dar tempo para carregar os recursos necessários.
+
+### Login
+Permite que o usuário entre no sistema informando e-mail/login e senha.  
+Os dados são validados com base nas informações cadastradas em memória. Caso os dados estejam incorretos, o sistema retorna mensagens de erro, garantindo a validação adequada.
+
+### Cadastro de Usuário
+Tela onde novos usuários podem se registrar.  
+Os dados informados são validados (nome, e-mail/login e senha) e armazenados em uma lista mockada durante a execução do app.  
+Após o cadastro, o usuário é redirecionado para a tela de login para realizar a autenticação.
+
+### Armazenamento em Memória
+Os dados dos usuários são mantidos temporariamente utilizando uma estrutura em memória (`List<UsuarioModel>`).  
+Não há uso de banco de dados ou API externa, conforme requisito da atividade.
+
+### Autenticação Simulada
+O sistema verifica se o usuário existe e se a senha está correta para permitir o acesso à aplicação.  
+Essa autenticação é apenas simulada, sem integração com serviços externos.
+
+### Tela Home
+Tela exibida após login bem-sucedido, contendo um ícone e uma mensagem de boas-vindas ao usuário.  
+Essa tela representa o ponto final do fluxo de autenticação, confirmando que o login foi realizado com sucesso.
 
 ---
 
@@ -32,13 +49,13 @@ O projeto foi desenvolvido como atividade P1 com foco em:
 
 O projeto segue uma organização baseada em separação de responsabilidades:
 
-lib/
-├── main.dart
-├── app/
-│ ├── models/
-│ ├── viewmodels/
-│ ├── data/
-│ └── views/
+lib/  
+├── main.dart  
+├── app/  
+│ ├── models/  
+│ ├── viewmodels/  
+│ ├── data/  
+│ └── views/  
 
 
 - **Models** → representam os dados (ex: usuário)  
